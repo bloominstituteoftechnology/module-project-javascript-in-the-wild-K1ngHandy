@@ -51,7 +51,7 @@
     const headAndTail = (array) => {
       let [head, ...tail] = array;
       console.log('tail', tail);
-      return array.length === 0 ? 'This array is empty' : head, tail;
+      return array.length === 0 ? 'This array is empty' : [head, tail];
     }
 
     // 👉 CHALLENGE 3
