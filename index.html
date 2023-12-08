@@ -126,16 +126,16 @@
     // ❗ Notes
     // 🧠 Even though object properties have no particular order, to avoid confusing
     // the test runner, please set in each object first name, then age, and finally jsLover.
-    const zip = (arr1, arr2, arr3) => {
-      console.log(arr1, arr2, arr3);
-      class Runner {
-        constructor(name, born, jsLover) {
-          this.name = arr1;
-          this.born = arr2;
-          this.jsLover = arr3;
-        }
+    const zip = (names, years, jsLovers) => {
+      const runner = [];
+
+      for (let i = 0; i < names.length; i++) {
+        runner.push({
+          name: names[i],
+          born: years[i],
+          jsLover: jsLovers[i],
+        });
       }
-      const runner = new Runner(arr1, arr2, arr3);
       return runner;
     }
 
