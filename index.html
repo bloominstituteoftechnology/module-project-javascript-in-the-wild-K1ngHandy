@@ -103,8 +103,15 @@
     // 🧠 Split the string but do not use the reverse method of arrays. Let's do it manually.
     // 🧠 We suggest using a for loop. Research how to loop backwards over an array, starting at the last element.
     // 🧠 Use a ternary in the return statement.
-    const reverseString = () => {
-
+    const reverseString = (str) => {
+          const reverse = () => {
+              let reverseStr = '';
+              for (let i = str.length - 1; i >= 0; i--) {
+              reverseStr += str[i];
+            }
+            return reverseStr;
+          }
+          return reverse() === str ? "It's a palindrome!" : reverse();
     }
 
     // 👉 CHALLENGE 7
